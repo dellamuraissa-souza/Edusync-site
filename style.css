@@ -322,12 +322,6 @@ button:focus-visible {
   margin-top: 32px;
 }
 
-.hero__texto .hero__aviso {
-  font-size: 0.88rem;
-  margin-top: 14px;
-  max-width: 44ch;
-}
-
 /* Imagem real do app dentro do topo */
 .hero__imagem img {
   width: 100%;
