@@ -28,8 +28,11 @@ html {
   scroll-padding-top: var(--altura-cabecalho);
 }
 
+/* Raleway em tudo: é a fonte do aplicativo, nos mesmos quatro pesos que
+   ele carrega (400, 500, 600 e 700). Site e app passam a ser a mesma coisa
+   olhando de longe. */
 body {
-  font-family: "Public Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.65;
   color: var(--texto);
   background-color: var(--branco);
@@ -38,22 +41,24 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Baloo 2", sans-serif;
-  line-height: 1.2;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 1.22;
   color: var(--azul-marinho);
 }
 
+/* Raleway é mais estreita que a fonte de título anterior, então os
+   títulos grandes pedem um pouco menos de espaço entre as letras. */
 h1 {
-  font-size: clamp(2rem, 5vw, 3.1rem);
-  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.015em;
 }
 h2 {
-  font-size: clamp(1.6rem, 3.4vw, 2.3rem);
-  font-weight: 700;
+  font-size: clamp(1.55rem, 3.2vw, 2.15rem);
+  letter-spacing: -0.01em;
 }
 h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 ul,
@@ -184,7 +189,7 @@ button:focus-visible {
 /* A imagem do logo já vem recortada, sem margem vazia em volta,
    então a altura aqui é a altura que ele realmente ocupa. */
 .logo__imagem {
-  height: 34px;
+  height: 42px;
   width: auto;
   object-fit: contain;
 }
@@ -215,9 +220,10 @@ button:focus-visible {
 }
 
 /* Classe colocada pelo JavaScript na seção que está na tela */
+/* Só a cor muda: a pílula escura atrás do item ativo ficava embaçada
+   em cima do azul do cabeçalho. */
 .menu__link--ativo {
   color: var(--laranja);
-  background-color: rgba(245, 166, 35, 0.14);
 }
 
 .menu__link--destaque {
@@ -445,9 +451,8 @@ button:focus-visible {
   color: var(--branco);
   display: grid;
   place-items: center;
-  font-family: "Baloo 2", sans-serif;
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
 }
 
 .passo__texto {
@@ -507,7 +512,6 @@ button:focus-visible {
 }
 
 .tec-grupo h3 {
-  font-family: "Public Sans", sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -790,7 +794,7 @@ button:focus-visible {
     padding: 5px 10px;
   }
   .logo__imagem {
-    height: 28px;
+    height: 34px;
   }
   .hero__texto {
     display: flex;
